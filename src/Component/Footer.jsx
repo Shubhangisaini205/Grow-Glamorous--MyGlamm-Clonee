@@ -1,5 +1,5 @@
 import React from "react";
-import "./Footer.css";
+import "../Css/Footer.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
     faYoutube,

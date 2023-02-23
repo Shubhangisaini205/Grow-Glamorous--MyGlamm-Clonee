@@ -1,7 +1,23 @@
 .App {
   text-align: center;
 }
+.ProductPageHeading{
+  display:inline;
+  padding:10px;
+  border-radius: 10px;
+  background: linear-gradient(white,white,#fc9090);
+}
 
+.ProductCardImage:hover{
+   transform: scale(1.1);
+
+}
+.ProductCardImage{
+   margin:auto;
+   width: 250px;
+   height:250px;
+
+}
 
 
  
