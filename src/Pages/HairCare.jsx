@@ -43,7 +43,7 @@ const reducer = (state, action) => {
     }
 
 };
-function Makeup() {
+function HairCare() {
 
     const [state, dispatch] = useReducer(reducer, initialState)
     const [searchParams, setSearchParams] = useSearchParams();
@@ -60,19 +60,10 @@ function Makeup() {
 
 
         
-//  const GetSkincare=()=>{
-//     dispatch({type:"REQUEST"})
-//   axios.get(`http://localhost:8080/skincare`).then((res)=>{
-//    console.log(res.data)
-//    dispatch({type:"SUCCESS",payload:res.data})
-    
-//   }).catch((err)=>{
-//    dispatch({type:"FAILURE",payload:err})
-//   })
-// }
-const GetMakeup=()=>{
+
+const GetShampoo=()=>{
     dispatch({type:"REQUEST"})
-  axios.get(`http://localhost:8080/makeup`).then((res)=>{
+  axios.get(`http://localhost:8080/shampoo`).then((res)=>{
    console.log(res.data)
    dispatch({type:"SUCCESS",payload:res.data})
     
@@ -80,26 +71,6 @@ const GetMakeup=()=>{
    dispatch({type:"FAILURE",payload:err})
   })
 }
-// const GetLipstick=()=>{
-//     dispatch({type:"REQUEST"})
-//   axios.get(`http://localhost:8080/lipstick`).then((res)=>{
-//    console.log(res.data)
-//    dispatch({type:"SUCCESS",payload:res.data})
-    
-//   }).catch((err)=>{
-//    dispatch({type:"FAILURE",payload:err})
-//   })
-// }
-// const GetShampoo=()=>{
-//     dispatch({type:"REQUEST"})
-//   axios.get(`http://localhost:8080/shampoo`).then((res)=>{
-//    console.log(res.data)
-//    dispatch({type:"SUCCESS",payload:res.data})
-    
-//   }).catch((err)=>{
-//    dispatch({type:"FAILURE",payload:err})
-//   })
-// }
 // const GetSunsScreen=()=>{
 //     dispatch({type:"REQUEST"})
 //   axios.get(`http://localhost:8080/sunscreen`).then((res)=>{
@@ -122,7 +93,7 @@ const GetMakeup=()=>{
 // }
 
 useEffect(()=>{
-GetMakeup()
+GetShampoo()
  let paramObj = {order}
  setSearchParams(paramObj)
 },[order])
@@ -136,14 +107,14 @@ GetMakeup()
         boxShadow= " rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px"
        >
           <Text>
-          HOME/MAKEUP
+          HOME/HAIRCARE
           </Text>
           </Box>
         <Box>
         <Heading 
         className="ProductPageHeading"
       
-        >MAKEUP</Heading>
+        >HAIRCARE</Heading>
         </Box>
        
        <SimpleGrid
@@ -208,4 +179,4 @@ GetMakeup()
 //         </Box>
     )
 }
-export default Makeup
+export default HairCare

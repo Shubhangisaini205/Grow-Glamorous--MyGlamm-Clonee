@@ -1,5 +1,5 @@
 
-import { Button, Spacer, FormControl, Input } from "@chakra-ui/react"
+import { Box } from "@chakra-ui/react"
 import { Link } from "react-router-dom"
 import "./Navbar.css";
 import NavbarTop from "./NavbarTop"
@@ -9,7 +9,7 @@ import Menubar from "./Menubar";
 
 function Navbar() {
     return (
-        <>
+        <Box className="navbar-sticky">
         <div className="main-nav">
 
           {/* mid navbar */}
@@ -53,8 +53,12 @@ function Navbar() {
             <Link to="/">HOME</Link>
             </li>
             <li>
+            <Link to="/makeup">MAKE UP</Link>
+            </li>
+            <li>
             <Link to="/haircare">HAIR CARE</Link>
             </li>
+
             <li>
             <Link to="/skincare">SKINCARE</Link>
             </li>
@@ -77,7 +81,7 @@ function Navbar() {
           
 
         </div>
-        </>
+        </Box>
         
 
     )
