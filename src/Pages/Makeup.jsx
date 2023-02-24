@@ -1,10 +1,11 @@
 
 import { Box, Button, Center, Img, SimpleGrid, Text, VStack, Select, Spinner, Heading } from "@chakra-ui/react";
-import React, { useReducer } from "react"
+import React, { useContext, useReducer } from "react"
 import { useEffect, useState } from 'react'
 import { useSearchParams } from "react-router-dom"
 import axios from "axios";
 import ProductCard from "../Component/ProductCard";
+import { CartContext } from "../Context/CartContextProvider";
 
 
 const initialState = {
@@ -44,7 +45,8 @@ const reducer = (state, action) => {
 
 };
 function Makeup() {
-
+   
+   
     const [state, dispatch] = useReducer(reducer, initialState)
     const [searchParams, setSearchParams] = useSearchParams();
     const [order, setOrder] = useState("asc")
@@ -80,6 +82,8 @@ const GetMakeup=()=>{
    dispatch({type:"FAILURE",payload:err})
   })
 }
+
+
 // const GetLipstick=()=>{
 //     dispatch({type:"REQUEST"})
 //   axios.get(`http://localhost:8080/lipstick`).then((res)=>{
@@ -153,59 +157,11 @@ GetMakeup()
         mt={10}
          columns={{sm:2,md:2,lg:3,base:1}} 
          spacing={10}>
-      {state.data.map((el)=> <ProductCard key = {el.id} {...el}/>)}
+      {state.data.map((el)=> <ProductCard key = {el.id} item ={el} />)}
       </SimpleGrid>
    
       </>
-//         <Box>
-//             <Heading>Heloo react</Heading>
-//             <div className="sortingButtons">
-//         <Button colorScheme={"green"}
-//         isDisabled={order=="asc"}
-//         className="sortByofferPricetAsc"
-//         // onClick={()=>setOrder("asc")}
-//         >
-//           Sort by Asc
-//         </Button>
-//         <Button colorScheme={"red"} className="sortByofferPriceDesc" m={2}
-//         // onClick = {()=>setOrder("desc")}
-//         >
-//           Sort by desc
-//         </Button>
-//       </div>
-     
 
-     
-//       {state.isLoading? <Spinner />:
-//         <SimpleGrid className="main_container" columns={4} spacing={10}>
-//           {state.data.map((el)=>(
-//         <Box className="ProductDetails"
-//          key={el.id}
-//          >
-//           <Center>
-//             <Img src={el.img} w={400} h={200} />
-//           </Center>
-
-//           <VStack spacing={2} p={2}>
-//             <Text className="name" fontSize={"20px"} fontWeight="bold"> {el.name}</Text>
-
-//             <Text className="description">{el.description}</Text>
-//             <Text className="offerPrice">
-//                  OFFER PRICE :
-//             {el.offerPrice}
-//             </Text>
-//             {/* <Text className="actualPrice">ACTUAL PRICE :{el.actualPrice}</Text> */}
-        
-          
-//             <Button className="AddToCart" bg={"green"}
-//              >Add to Cart</Button>
-//           </VStack>
-//         </Box>
-      
-//       ))}
-//       </SimpleGrid>
-// }
-//         </Box>
     )
 }
 export default Makeup

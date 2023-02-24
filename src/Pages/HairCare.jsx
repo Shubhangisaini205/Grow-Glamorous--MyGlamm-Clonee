@@ -124,7 +124,7 @@ GetShampoo()
         mt={10}
          columns={{sm:2,md:2,lg:3,base:1}} 
          spacing={10}>
-      {state.data.map((el)=> <ProductCard key = {el.id} {...el}/>)}
+      {state.data.map((el)=> <ProductCard key = {el.id} item= {el}/>)}
       </SimpleGrid>
    
       </>

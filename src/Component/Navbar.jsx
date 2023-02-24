@@ -6,8 +6,13 @@ import NavbarTop from "./NavbarTop"
 import SearchBar from "./SearchBar";
 import { FaShoppingBag,FaUser } from "react-icons/fa";
 import Menubar from "./Menubar";
+import { useContext } from "react";
+import { CartContext } from "../Context/CartContextProvider";
 
 function Navbar() {
+    const {bag}=useContext(CartContext)
+   
+   
     return (
         <Box className="navbar-sticky">
         <div className="main-nav">
@@ -29,10 +34,17 @@ function Navbar() {
 
             {/* bag and profile */}
             <div  className="bag-profile">
+
                 <ul className = "bag-profile-desktop">
                     <li>
-                        <Link>
-                        <FaShoppingBag  color="red"/></Link>
+                       <Link to="/bag">
+                        <span>
+                        <i className="fas fa-cart-plus"></i>
+                        </span>
+                        
+                        <span>{bag.length}</span>
+                        </Link>
+                       
                     </li>
                     <li>
                         <Link>

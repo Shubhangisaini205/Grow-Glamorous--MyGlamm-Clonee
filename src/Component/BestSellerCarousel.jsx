@@ -203,7 +203,7 @@ export default function BestSellerCarousel() {
                         <Box
           cursor={"pointer"}
           className="box"
-            key={index}
+            key={item.id}
           >
             <Box
             className="hover Product"
