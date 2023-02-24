@@ -109,7 +109,7 @@ function HomePage() {
 
      
 
-      <Footer />
+    
 
     </div>
   )
