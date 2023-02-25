@@ -18,7 +18,7 @@ const settings = {
   slidesToScroll: 1,
 };
 
-export default function Carousel1() {
+export default function Carousel2() {
   // As we have used custom buttons, we need a reference variable to
   // change the state
   const [slider, setSlider] = React.useState();
@@ -30,16 +30,18 @@ export default function Carousel1() {
 
   // These are the images used in the slide
   const cards = [
-    'https://files.myglamm.com/site-images/original/1920x527ssr.jpg',
-    'https://files.myglamm.com/site-images/original/1920x527-pout-perfect-lip-balms.gif','https://files.myglamm.com/site-images/original/main3-1920x527.jpg',
-    'https://files.myglamm.com/site-images/original/1920X527-5.gif'
+    'https://files.myglamm.com/site-images/original/CRED-Pay-3360x279_11.png',
+    'https://files.myglamm.com/site-images/original/AU-3360x279_4.png','https://files.myglamm.com/site-images/original/Mobikwik-3360x279_3.png',
+    'https://files.myglamm.com/site-images/original/paytm-3360x279_7.png',
+    'https://files.myglamm.com/site-images/original/Copy-of-simpl-3360x279_1.png'
   ];
 
   return (
     <Box 
+      mt={20}
     
       position={'relative'}
-      height={'450px'}
+      height={'100px'}
       marginBottom="-50px"
       width={'full'}
       overflow={'hidden'}>
@@ -91,7 +93,9 @@ export default function Carousel1() {
           <Box
           cursor={"pointer"}
             key={index}
-            height={'sm'}
+           
+           height={'100px'}
+
             position="relative"
             backgroundPosition="center"
             backgroundRepeat="no-repeat"

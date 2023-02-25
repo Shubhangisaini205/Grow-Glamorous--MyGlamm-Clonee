@@ -1,5 +1,5 @@
 
-import { Box, Button, Center, Img, SimpleGrid, Text, VStack, Select, Spinner, Heading } from "@chakra-ui/react";
+import { Box, Button, SimpleGrid, Text, Spinner, Heading } from "@chakra-ui/react";
 import React, { useReducer } from "react"
 import { useEffect, useState } from 'react'
 import { useSearchParams } from "react-router-dom"
@@ -40,6 +40,8 @@ const reducer = (state, action) => {
 
             }
         }
+        default:
+            throw new Error()
     }
 
 };
@@ -47,23 +49,23 @@ function HairCare() {
 
     const [state, dispatch] = useReducer(reducer, initialState)
     const [searchParams, setSearchParams] = useSearchParams();
-    const [order, setOrder] = useState("asc")
-    const [filter, setFilter] = useState("")
+    const [order, setOrder] = useState(searchParams.get("order") || "")
+
 
     let sort = "offerPrice"
 
-    // let apiUrl;
+    let apiUrl;
 
-    // (order && filter) ?
-    //     apiUrl = `http://localhost:${process.env.REACT_APP_JSON_SERVER_PORT}/skincare?_sort=${sort}&_order=${order}&breed=${filter}` :
-    //     apiUrl = `http://localhost:${process.env.REACT_APP_JSON_SERVER_PORT}/skincare?_sort=${sort}&_order=${order}`
+    (order) ?
+        apiUrl = `http://localhost:8080/shampoo?_sort=${sort}&_order=${order}` :
+        apiUrl = `http://localhost:8080/shampoo`
 
 
         
 
 const GetShampoo=()=>{
     dispatch({type:"REQUEST"})
-  axios.get(`http://localhost:8080/shampoo`).then((res)=>{
+  axios.get(apiUrl).then((res)=>{
    console.log(res.data)
    dispatch({type:"SUCCESS",payload:res.data})
     
@@ -71,26 +73,7 @@ const GetShampoo=()=>{
    dispatch({type:"FAILURE",payload:err})
   })
 }
-// const GetSunsScreen=()=>{
-//     dispatch({type:"REQUEST"})
-//   axios.get(`http://localhost:8080/sunscreen`).then((res)=>{
-//    console.log(res.data)
-//    dispatch({type:"SUCCESS",payload:res.data})
-    
-//   }).catch((err)=>{
-//    dispatch({type:"FAILURE",payload:err})
-//   })
-// }
-// const GetEyeliner=()=>{
-//     dispatch({type:"REQUEST"})
-//   axios.get(`http://localhost:8080/eyeliner`).then((res)=>{
-//    console.log(res.data)
-//    dispatch({type:"SUCCESS",payload:res.data})
-    
-//   }).catch((err)=>{
-//    dispatch({type:"FAILURE",payload:err})
-//   })
-// }
+
 
 useEffect(()=>{
 GetShampoo()
@@ -110,12 +93,34 @@ GetShampoo()
           HOME/HAIRCARE
           </Text>
           </Box>
+          { state.isLoading? <Spinner
+           thickness='4px'
+           speed='0.65s'
+           emptyColor='gray.200'
+           color='orange.500'
+           size='xl'/>:
+          <Box>
         <Box>
         <Heading 
         className="ProductPageHeading"
       
         >HAIRCARE</Heading>
         </Box>
+        <Box className="sortingButtons" mt={10} >
+        <Button colorScheme={"orange"}
+        isDisabled={order=="asc"}
+        className="sortByCostAsc"
+        onClick={()=>setOrder("asc")}
+        >
+          Price Low to High
+        </Button>
+        <Button colorScheme={"teal"} className="sortByCostDesc" m={2}
+        isDisabled={order=="desc"}
+        onClick = {()=>setOrder("desc")}
+        >
+         Price High to Low
+        </Button>
+      </Box>
        
        <SimpleGrid
         className="main_container"
@@ -126,57 +131,10 @@ GetShampoo()
          spacing={10}>
       {state.data.map((el)=> <ProductCard key = {el.id} item= {el}/>)}
       </SimpleGrid>
+      </Box>}
    
       </>
-//         <Box>
-//             <Heading>Heloo react</Heading>
-//             <div className="sortingButtons">
-//         <Button colorScheme={"green"}
-//         isDisabled={order=="asc"}
-//         className="sortByofferPricetAsc"
-//         // onClick={()=>setOrder("asc")}
-//         >
-//           Sort by Asc
-//         </Button>
-//         <Button colorScheme={"red"} className="sortByofferPriceDesc" m={2}
-//         // onClick = {()=>setOrder("desc")}
-//         >
-//           Sort by desc
-//         </Button>
-//       </div>
-     
 
-     
-//       {state.isLoading? <Spinner />:
-//         <SimpleGrid className="main_container" columns={4} spacing={10}>
-//           {state.data.map((el)=>(
-//         <Box className="ProductDetails"
-//          key={el.id}
-//          >
-//           <Center>
-//             <Img src={el.img} w={400} h={200} />
-//           </Center>
-
-//           <VStack spacing={2} p={2}>
-//             <Text className="name" fontSize={"20px"} fontWeight="bold"> {el.name}</Text>
-
-//             <Text className="description">{el.description}</Text>
-//             <Text className="offerPrice">
-//                  OFFER PRICE :
-//             {el.offerPrice}
-//             </Text>
-//             {/* <Text className="actualPrice">ACTUAL PRICE :{el.actualPrice}</Text> */}
-        
-          
-//             <Button className="AddToCart" bg={"green"}
-//              >Add to Cart</Button>
-//           </VStack>
-//         </Box>
-      
-//       ))}
-//       </SimpleGrid>
-// }
-//         </Box>
     )
 }
 export default HairCare
