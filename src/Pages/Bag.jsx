@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from 'react'
+import React, { useContext, useEffect } from 'react'
 import { CartContext } from '../Context/CartContextProvider'
 import "../Css/Bag.css";
 import { Link } from 'react-router-dom';
@@ -25,6 +25,7 @@ function Bag() {
 
   return (
     <article>
+      <Heading className='ggbag'>YOUR GG BAG</Heading>
       {bag.map((item) => (
         <div className="cart_box" key={item.id}>
           <div className="cart_img">
@@ -47,10 +48,10 @@ function Bag() {
         </div>
       ))}
       <div className="total">
-        <span>Total Price of your Cart</span>
+        <span>Total Price of your Bag</span>
         <span>Rs: {price}/-</span>
       </div>
-      {bag.length != 0 ? <Link to="/checkout"><button className='checkout'>Proceed to Checkout</button></Link> : <Heading color={'pink.900'}>Cart is Empty</Heading>}
+      {bag.length !== 0 ? <Link to="/checkout"><button className='checkout'>Proceed to Checkout</button></Link> : <Heading color={'pink.900'}>Bag is Empty</Heading>}
 
     </article>
   )

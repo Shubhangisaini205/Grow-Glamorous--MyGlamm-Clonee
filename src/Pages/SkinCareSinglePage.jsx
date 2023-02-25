@@ -4,25 +4,22 @@ import { useState, useEffect } from 'react'
 import SingleProductCard from '../Component/SingleProductCard'
 
 
-function HairCareSingle() {
-    const [hairCare, setHairCare] = useState({})
+function SkinCareSingle() {
+    const [skincare, setSkincare] = useState({})
     const val = useParams()
-    const GetHairCare = async () => {
+    const GetSkincare= async () => {
         try {
-            let res = await fetch(`http://localhost:8080/shampoo/${val.hairCare_id}`)
+            let res = await fetch(`http://localhost:8080/skincare/${val.skincare_id}`)
             let Data = await res.json();
             console.log(Data)
-            setHairCare(Data);
+            setSkincare(Data);
         } catch (error) {
             console.log(error)
         }
     }
-    useEffect(() => { GetHairCare() }, [])
+    useEffect(() => { GetSkincare() }, [])
     return (
-        <>
-            <SingleProductCard item = {hairCare} />
-        </>
+        <> <SingleProductCard  item ={skincare} /></>
     )
 }
-
-export default HairCareSingle
+export default SkinCareSingle

@@ -87,6 +87,13 @@
     color: rgb(6, 6, 6);
     font-weight: bold;
   }
+  .ggbag{
+    display:inline;
+    padding:10px;
+    border-radius: 10px;
+    background: linear-gradient(white,white,#fc9090);
+    
+  }
   .checkout{
     padding: 10px 10px;
     font-weight: bold;

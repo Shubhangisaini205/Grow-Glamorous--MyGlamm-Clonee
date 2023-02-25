@@ -19,7 +19,7 @@ function MakeupSingle() {
     }
     useEffect(() => { GetMakeup() }, [])
     return (
-        <> <SingleProductCard {...makeup} /></>
+        <> <SingleProductCard  item ={makeup} /></>
     )
 }
 export default MakeupSingle

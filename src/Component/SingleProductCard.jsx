@@ -1,5 +1,5 @@
-import React from 'react'
-import { Divider, ButtonGroup, Button, Image, Card, Text, CardBody, CardFooter, Heading, Stack, Flex, Spacer, Box, SimpleGrid, HStack, Center, transform } from '@chakra-ui/react'
+import React, { useContext } from 'react'
+import { Button, Image,Text,  Heading, Stack, Flex, Spacer, Box, SimpleGrid, HStack, Center,} from '@chakra-ui/react'
 import { StarIcon } from '@chakra-ui/icons'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { FaShoppingBag } from "react-icons/fa";
@@ -9,8 +9,11 @@ import {
     faTwitter,
 
 } from "@fortawesome/free-brands-svg-icons";
+import { CartContext } from '../Context/CartContextProvider';
 
-function SingleProductCard({ img, name, description, offerPrice, actualPrice, id }) {
+function SingleProductCard({item}) {
+    const { img, name, description, offerPrice, actualPrice, id } = item
+    const {HandleAddToBag,bag} = useContext(CartContext)
     return (
 
 
@@ -18,7 +21,6 @@ function SingleProductCard({ img, name, description, offerPrice, actualPrice, id
         >
             <SimpleGrid columns={{ base: 1, sm: 1, md: 2, lg: 2 }}>
                 <Box
-                border={"1px solid black"}
                 >
                     <Box m={"5%"}
                      >
@@ -76,9 +78,10 @@ function SingleProductCard({ img, name, description, offerPrice, actualPrice, id
                 
                  bg='pink' 
                  color={"pink.900"}>
-                    <Flex gap={2}>
+                    <Flex gap={2} onClick={()=>
+         HandleAddToBag(item)}>
                     <FaShoppingBag  color={"pink.900"}/>
-                    <Text>Add to bag</Text>
+                    <Text >Add to bag</Text>
                     </Flex>
                     
                 </Button>
@@ -87,7 +90,11 @@ function SingleProductCard({ img, name, description, offerPrice, actualPrice, id
                     <Text color="black">
                     You will receive 10% cashback  as GG POINTS on this purchase
                     </Text>
+                    <Spacer/>
+        
+                   
                 </Box>
+                <Text fontWeight={"bold"}>Important: Product will be delivered within 4 to 5  days</Text>
                     </Stack>
                 </Box>
 

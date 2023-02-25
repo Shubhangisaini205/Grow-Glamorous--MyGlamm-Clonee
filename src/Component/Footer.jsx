@@ -340,7 +340,7 @@ const Footer = () => {
             <a href="">Refer &amp; Earn</a>
           </li>
           <li>
-            <a href="">myglammPARTIES</a>
+            <a href="">GG PARTIES</a>
           </li>
           <li>
             <a href="">Store Locator</a>
@@ -363,7 +363,7 @@ const Footer = () => {
             <a href="">Returns and Replacements</a>
           </li>
           <li>
-            <a href="">MyGlamm Rewards</a>
+            <a href="">GG Rewards</a>
           </li>
           <li>
             <a href="">Sitemap</a>
@@ -371,14 +371,6 @@ const Footer = () => {
         </ul>
       </div>
         <div id="footerBottom">
-          <div id="sect1">
-            <form action="">
-              <label for="">SUBSCRIBE FOR MYGLAMM EMAILS</label>
-              <br />
-              <input type="text" placeholder="Please enter valid email ID" />
-              <button>SUBSCRIBE NOW</button>
-            </form>
-          </div>
           <div className="social">
             <p className="social-container">
               <a
@@ -405,18 +397,18 @@ const Footer = () => {
             </p>
           </div>
           <div id="sect2">
-            <label for="">EXPERIENCE THE MYGLAMM MOBILE APP</label>
+            <label >EXPERIENCE THE GG MOBILE APP</label>
             <br />
             <a href="">
               <img
-                src="https://www.myglamm.com/images/iosStore.png"
+                src="https://files.myglamm.com/site-images/original/iosStore.png"
                 alt=""
                 id="img1"
               />
             </a>
             <a href="">
               <img
-                src="https://www.myglamm.com/images/playStore.png"
+                src="https://files.myglamm.com/site-images/original/playStore.png"
                 alt=""
                 id="img2"
               />

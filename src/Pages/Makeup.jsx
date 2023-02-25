@@ -1,5 +1,5 @@
 
-import { Box, Button, Center, Img, SimpleGrid, Text, VStack, Select, Spinner, Heading } from "@chakra-ui/react";
+import { Box, Button,  SimpleGrid, Text, Spinner, Heading } from "@chakra-ui/react";
 import React, { useContext, useReducer } from "react"
 import { useEffect, useState } from 'react'
 import { useSearchParams } from "react-router-dom"
@@ -21,7 +21,7 @@ const reducer = (state, action) => {
             return {
                 ...state,
                 isLoading: true,
-                error: false
+                error: false,
             }
         }
         case "SUCCESS": {
@@ -41,6 +41,8 @@ const reducer = (state, action) => {
 
             }
         }
+        default:
+            throw new Error()
     }
 
 };
@@ -49,32 +51,23 @@ function Makeup() {
    
     const [state, dispatch] = useReducer(reducer, initialState)
     const [searchParams, setSearchParams] = useSearchParams();
-    const [order, setOrder] = useState("asc")
-    const [filter, setFilter] = useState("")
+    const [order, setOrder] = useState(searchParams.get("order") || "")
+    
 
     let sort = "offerPrice"
 
-    // let apiUrl;
+    let apiUrl;
 
-    // (order && filter) ?
-    //     apiUrl = `http://localhost:${process.env.REACT_APP_JSON_SERVER_PORT}/skincare?_sort=${sort}&_order=${order}&breed=${filter}` :
-    //     apiUrl = `http://localhost:${process.env.REACT_APP_JSON_SERVER_PORT}/skincare?_sort=${sort}&_order=${order}`
+    (order) ?
+        apiUrl = `http://localhost:8080/makeup?_sort=${sort}&_order=${order}` :
+        apiUrl = `http://localhost:8080/makeup`
 
 
         
-//  const GetSkincare=()=>{
-//     dispatch({type:"REQUEST"})
-//   axios.get(`http://localhost:8080/skincare`).then((res)=>{
-//    console.log(res.data)
-//    dispatch({type:"SUCCESS",payload:res.data})
-    
-//   }).catch((err)=>{
-//    dispatch({type:"FAILURE",payload:err})
-//   })
-// }
+
 const GetMakeup=()=>{
     dispatch({type:"REQUEST"})
-  axios.get(`http://localhost:8080/makeup`).then((res)=>{
+  axios.get(apiUrl).then((res)=>{
    console.log(res.data)
    dispatch({type:"SUCCESS",payload:res.data})
     
@@ -83,47 +76,6 @@ const GetMakeup=()=>{
   })
 }
 
-
-// const GetLipstick=()=>{
-//     dispatch({type:"REQUEST"})
-//   axios.get(`http://localhost:8080/lipstick`).then((res)=>{
-//    console.log(res.data)
-//    dispatch({type:"SUCCESS",payload:res.data})
-    
-//   }).catch((err)=>{
-//    dispatch({type:"FAILURE",payload:err})
-//   })
-// }
-// const GetShampoo=()=>{
-//     dispatch({type:"REQUEST"})
-//   axios.get(`http://localhost:8080/shampoo`).then((res)=>{
-//    console.log(res.data)
-//    dispatch({type:"SUCCESS",payload:res.data})
-    
-//   }).catch((err)=>{
-//    dispatch({type:"FAILURE",payload:err})
-//   })
-// }
-// const GetSunsScreen=()=>{
-//     dispatch({type:"REQUEST"})
-//   axios.get(`http://localhost:8080/sunscreen`).then((res)=>{
-//    console.log(res.data)
-//    dispatch({type:"SUCCESS",payload:res.data})
-    
-//   }).catch((err)=>{
-//    dispatch({type:"FAILURE",payload:err})
-//   })
-// }
-// const GetEyeliner=()=>{
-//     dispatch({type:"REQUEST"})
-//   axios.get(`http://localhost:8080/eyeliner`).then((res)=>{
-//    console.log(res.data)
-//    dispatch({type:"SUCCESS",payload:res.data})
-    
-//   }).catch((err)=>{
-//    dispatch({type:"FAILURE",payload:err})
-//   })
-// }
 
 useEffect(()=>{
 GetMakeup()
@@ -134,7 +86,9 @@ GetMakeup()
 
 
     return (
+        
       <>
+     
         <Box mb={10}
         p={4}
         boxShadow= " rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px"
@@ -143,13 +97,36 @@ GetMakeup()
           HOME/MAKEUP
           </Text>
           </Box>
-        <Box>
+          { state.isLoading? <Spinner
+           thickness='4px'
+           speed='0.65s'
+           emptyColor='gray.200'
+           color='orange.500'
+           size='xl'/>:
+          <Box>
+          <Box>
+            
         <Heading 
         className="ProductPageHeading"
       
         >MAKEUP</Heading>
         </Box>
-       
+        <Box className="sortingButtons" mt={10} >
+        <Button colorScheme={"orange"}
+        isDisabled={order=="asc"}
+        className="sortByCostAsc"
+        onClick={()=>setOrder("asc")}
+        >
+          Price Low to High
+        </Button>
+        <Button colorScheme={"teal"} className="sortByCostDesc" m={2}
+        isDisabled={order=="desc"}
+        onClick = {()=>setOrder("desc")}
+        >
+         Price High to Low
+        </Button>
+      </Box>
+        
        <SimpleGrid
         className="main_container"
         w="85%"
@@ -159,6 +136,8 @@ GetMakeup()
          spacing={10}>
       {state.data.map((el)=> <ProductCard key = {el.id} item ={el} />)}
       </SimpleGrid>
+      </Box>
+      }
    
       </>
 
