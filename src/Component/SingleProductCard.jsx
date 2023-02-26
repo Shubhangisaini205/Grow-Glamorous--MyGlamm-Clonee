@@ -24,7 +24,7 @@ function SingleProductCard({item}) {
                 >
                     <Box m={"5%"}
                      >
-                        <Image
+                        <Image className="shrinkimage"
                        boxShadow={ "rgba(0, 0, 0, 0.24) 0px 3px 8px"}
                             h="400px"
                             src={img}
