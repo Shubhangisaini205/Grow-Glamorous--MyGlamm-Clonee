@@ -56,7 +56,7 @@ function Signin() {
     if (flag == true) {
       // console.log("OK")
       toast({
-        description: "Welcome to Glow Glamorous",
+        description: "Welcome to Grow Glamorous",
         status: "success",
         duration: 1500,
         isClosable: true,
