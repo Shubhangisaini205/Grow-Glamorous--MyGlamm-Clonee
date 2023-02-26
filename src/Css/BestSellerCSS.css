@@ -1,5 +1,11 @@
 .hover:hover{
-  transform: scale(1.08);
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.09);
+    transition: 1s ease;
+    }
+    .hover{
+        transition: 1s ease;
     }
     .box{
         background-color:whitesmoke;

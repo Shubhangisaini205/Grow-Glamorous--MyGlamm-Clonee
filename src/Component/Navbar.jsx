@@ -1,28 +1,29 @@
 
-import { Box } from "@chakra-ui/react"
+import { Box,Text } from "@chakra-ui/react"
 import { Link } from "react-router-dom"
-import "./Navbar.css";
+import "../Css/Navbar.css";
 import NavbarTop from "./NavbarTop"
 import SearchBar from "./SearchBar";
-import { FaShoppingBag,FaUser } from "react-icons/fa";
+
 import Menubar from "./Menubar";
 import { useContext } from "react";
 import { CartContext } from "../Context/CartContextProvider";
 
 function Navbar() {
-    const {bag}=useContext(CartContext)
+    const {bag,auth,user}=useContext(CartContext)
    
    
     return (
         <Box className="navbar-sticky">
         <div className="main-nav">
-
+ <NavbarTop/>
           {/* mid navbar */}
            <nav className="mid-nav">
-            <div className="logo">
-            <h2>
+            <div className="logoname">
+            <h2 className="navggname">
             <span>G</span>row
             <span> G</span>lamorous
+           
           </h2>
 
             </div>
@@ -31,26 +32,28 @@ function Navbar() {
                  <SearchBar/>
 
             </div>
-
+            
             {/* bag and profile */}
             <div  className="bag-profile">
-
+            
                 <ul className = "bag-profile-desktop">
+               
                     <li>
+                    
                        <Link to="/bag">
                         <span>
+                    
+                        
                         <i className="fas fa-cart-plus"></i>
                         </span>
                         
                         <span>{bag.length}</span>
                         </Link>
-                       
+                   
                     </li>
-                    <li>
-                        <Link>
-                        <FaUser   color="red"/></Link>
-                    </li>
+
                 </ul>
+               
                 
                
                 
@@ -58,40 +61,8 @@ function Navbar() {
 
            </nav>
 
-           {/* //bottom navbar */}
-           <nav className="bottom-nav">
-           <ul>
-            <li>
-            <Link to="/">HOME</Link>
-            </li>
-            <li>
-            <Link to="/makeup">MAKE UP</Link>
-            </li>
-            <li>
-            <Link to="/haircare">HAIR CARE</Link>
-            </li>
-
-            <li>
-            <Link to="/skincare">SKINCARE</Link>
-            </li>
-            <li>
-            <Link to="/Sanitizing">SANITIZING CARE</Link>
-            </li>
-            <li>
-            <Link to="/collection">COLLECTION</Link>
-            </li>
-            <li>
-            <Link to="/reward">REWARD</Link>
-            </li>
-
-          </ul>
-          {/* <Menubar/> */}
-           </nav>
-
-      
-                
-          
-
+          <Menubar/>
+    
         </div>
         </Box>
         

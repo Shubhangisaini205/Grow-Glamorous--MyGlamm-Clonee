@@ -239,7 +239,7 @@
       "actualPrice": 119
     },
     {
-      "id":24,
+      "id": 24,
       "img": "https://files.myglamm.com/site-images/800x800/Beach-bum-(1)_1.png",
       "name": "POPxo Beach Bum Ultra-Light Sunscreen Spray SPF 50 PA+++ 50ml",
       "description": "Sunscreen For Girls On The Go",
@@ -324,7 +324,8 @@
       "img": "https://files.myglamm.com/site-images/800x800/1-(1)_3.jpg",
       "name": "GLOW Iridescent Brightening Sheet Mask",
       "description": "Rosehip Oil-infused Brightening Sheet Mask",
-      "offerPrice": 149,"amount": 1,
+      "offerPrice": 149,
+      "amount": 1,
       "actualPrice": 199
     },
     {
@@ -341,7 +342,8 @@
       "img": "https://files.myglamm.com/site-images/800x800/Product-shot-01_2.jpg",
       "name": "MyGlamm 3% Hyaluronic Acid Hydrating Serum",
       "description": "Clinically Tested, Highly Concentrated Face Serum with Hyaluronic Acid & Natural Extracts",
-      "offerPrice": 524,"amount": 1,
+      "offerPrice": 524,
+      "amount": 1,
       "actualPrice": 699
     },
     {
@@ -349,7 +351,8 @@
       "img": "https://files.myglamm.com/site-images/800x800/Blueberry---Kakadu-Plum-Sleeping-Mask-1_1.jpg",
       "name": "MyGlamm SUPERFOODS Blueberry & Kakadu Plum Sleeping Mask",
       "description": "Brightening & skin repairing Sleeping Mask with natural extracts from natural superfoods",
-      "offerPrice": 424,"amount": 1,
+      "offerPrice": 424,
+      "amount": 1,
       "actualPrice": 499
     },
     {
@@ -357,7 +360,8 @@
       "img": "https://files.myglamm.com/site-images/800x800/Blueberry---Kakadu-Plum-Sleeping-Mask-1_1.jpg",
       "name": "MyGlamm SUPERFOODS Blueberry & Kakadu Plum Sleeping Mask",
       "description": "Brightening & skin repairing Sleeping Mask with natural extracts from natural superfoods",
-      "offerPrice": 424,"amount": 1,
+      "offerPrice": 424,
+      "amount": 1,
       "actualPrice": 499
     },
     {
@@ -374,7 +378,8 @@
       "img": "https://files.myglamm.com/site-images/800x800/Product-shot-01_4.jpg",
       "name": "MyGlamm 10% Niacinamide Clarifying Serum",
       "description": "Clinically Tested, Highly Concentrated Face Serum with Niacinamide & Natural Extracts",
-      "offerPrice": 524,"amount": 1,
+      "offerPrice": 524,
+      "amount": 1,
       "actualPrice": 699
     },
     {
@@ -382,7 +387,8 @@
       "img": "https://files.myglamm.com/site-images/800x800/16-Kesar-Face-Pack-Gel-Post-1-01.jpg",
       "name": "Manish Malhotra Kesar Face Pack Gel",
       "description": "Gel-based Natural Face Pack",
-      "offerPrice": 708,"amount": 1,
+      "offerPrice": 708,
+      "amount": 1,
       "actualPrice": 945
     },
     {
@@ -390,7 +396,8 @@
       "img": "https://files.myglamm.com/site-images/800x800/Blueberry---Strawberry-Face-Cream-1_1.jpg",
       "name": "MyGlamm SUPERFOODS Blueberry & Strawberry Face Cream",
       "description": "Brightening & hydrating face cream with natural extracts from natural superfoods",
-      "offerPrice": 299,"amount": 1,
+      "offerPrice": 299,
+      "amount": 1,
       "actualPrice": 399
     },
     {
@@ -407,7 +414,8 @@
       "img": "https://files.myglamm.com/site-images/800x800/Beach-bum-(1)_1.png",
       "name": "POPxo Beach Bum Ultra-Light Sunscreen Spray SPF 50 PA+++ 50ml",
       "description": "Sunscreen For Girls On The Go",
-      "offerPrice": 297,"amount": 1,
+      "offerPrice": 297,
+      "amount": 1,
       "actualPrice": 349
     },
     {
@@ -442,7 +450,8 @@
       "img": "https://files.myglamm.com/site-images/800x800/DDCF-(1)_1.jpg",
       "name": "MyGlamm SUPERFOODS Cacao & Berries SPF Day Cream",
       "description": "Nourishing & Protecting Day Cream With SPF",
-      "offerPrice": 319,"amount": 1,
+      "offerPrice": 319,
+      "amount": 1,
       "actualPrice": 399
     },
     {
@@ -450,7 +459,8 @@
       "img": "https://files.myglamm.com/site-images/800x800/BCHBU.png",
       "name": "POPxo Beach Bum Multi-use Sunscreen Spray SPF 50 PA+++ 50ml",
       "description": "Sunscreen For Girls On The Go",
-      "offerPrice": 349,"amount": 1,
+      "offerPrice": 349,
+      "amount": 1,
       "actualPrice": ""
     },
     {
@@ -480,7 +490,8 @@
       "description": "Mini Lipstick kit with 3 creamy-matte nude lipsticks",
       "plus": "https://www.myglamm.com/images/plus-icon.png",
       "count": "5 Shades",
-      "offerPrice": 244,"amount": 1,
+      "offerPrice": 244,
+      "amount": 1,
       "actualPrice": 349
     },
     {
@@ -512,7 +523,8 @@
       "description": "Hi-Wattage 3D Satin Matte Finish Lipstick With Intense Colour Payoff",
       "plus": "https://www.myglamm.com/images/plus-icon.png",
       "count": "19 Shades",
-      "offerPrice": 371,"amount": 1,
+      "offerPrice": 371,
+      "amount": 1,
       "actualPrice": 495
     },
     {
@@ -522,7 +534,8 @@
       "description": "Lightweight, Long-wear Lipsticks",
       "plus": "https://www.myglamm.com/images/plus-icon.png",
       "count": "24 Shades",
-      "offerPrice": 712,"amount": 1,
+      "offerPrice": 712,
+      "amount": 1,
       "actualPrice": 950
     },
     {
@@ -554,7 +567,8 @@
       "description": "Hydrating Long-wear Lipstick",
       "plus": "https://www.myglamm.com/images/plus-icon.png",
       "count": "17 Shades",
-      "offerPrice": 712,"amount": 1,
+      "offerPrice": 712,
+      "amount": 1,
       "actualPrice": 950
     },
     {
@@ -564,7 +578,8 @@
       "description": "Long-stay Velvet Matte Lip Colour",
       "plus": "https://www.myglamm.com/images/plus-icon.png",
       "count": "19 Shades",
-      "offerPrice": 696,"amount": 1,
+      "offerPrice": 696,
+      "amount": 1,
       "actualPrice": 995
     },
     {
@@ -596,7 +611,8 @@
       "description": "Precision Perfect Matte Slimstick",
       "plus": "https://www.myglamm.com/images/plus-icon.png",
       "count": "17 Shades",
-      "offerPrice": 416,"amount": 1,
+      "offerPrice": 416,
+      "amount": 1,
       "actualPrice": 595
     },
     {
@@ -606,7 +622,8 @@
       "description": "Moisturising and Nourishing 2 in 1 Lip & Cheek Jumbo Pencil",
       "plus": "https://www.myglamm.com/images/plus-icon.png",
       "count": "1 Shade",
-      "offerPrice": 711,"amount": 1,
+      "offerPrice": 711,
+      "amount": 1,
       "actualPrice": 790
     },
     {
@@ -638,7 +655,8 @@
       "description": "Orange Flavoured Vitamin E-enriched Creamy Lipstick",
       "plus": "",
       "count": "",
-      "offerPrice": 708,"amount": 1,
+      "offerPrice": 708,
+      "amount": 1,
       "actualPrice": 1090
     }
   ],
@@ -666,7 +684,8 @@
       "img": "https://files.myglamm.com/site-images/800x800/Passion-Fruit--Rosemary-Shampoo.jpg",
       "name": "MyGlamm SUPERFOODS Passion Fruit & Rosemary Shampoo",
       "description": "Nourishing & Cleansing Shampoo with extracts from natural superfoods",
-      "offerPrice": 449,"amount": 1,
+      "offerPrice": 449,
+      "amount": 1,
       "actualPrice": 499
     },
     {
@@ -701,7 +720,8 @@
       "img": "https://files.myglamm.com/site-images/800x800/SF--Hair-Fall-Control-2.jpg",
       "name": "MyGlamm SUPERFOODS Hair Fall Control Combo",
       "description": "Hair Fall Control With Extracts From Natural Superfoods",
-      "offerPrice": 478,"amount": 1,
+      "offerPrice": 478,
+      "amount": 1,
       "actualPrice": 598
     }
   ],
@@ -711,7 +731,8 @@
       "img": "https://files.myglamm.com/site-images/800x800/Beach-bum-(1)_1.png",
       "name": "POPxo Beach Bum Ultra-Light Sunscreen Spray SPF 50 PA+++ 50ml",
       "description": "Sunscreen For Girls On The Go",
-      "offerPrice": 297,"amount": 1,
+      "offerPrice": 297,
+      "amount": 1,
       "actualPrice": 349
     },
     {
@@ -746,7 +767,8 @@
       "img": "https://files.myglamm.com/site-images/800x800/DDCF-(1)_1.jpg",
       "name": "MyGlamm SUPERFOODS Cacao & Berries SPF Day Cream",
       "description": "Nourishing & Protecting Day Cream With SPF",
-      "offerPrice": 319,"amount": 1,
+      "offerPrice": 319,
+      "amount": 1,
       "actualPrice": 399
     },
     {
@@ -754,7 +776,8 @@
       "img": "https://files.myglamm.com/site-images/800x800/BCHBU.png",
       "name": "POPxo Beach Bum Multi-use Sunscreen Spray SPF 50 PA+++ 50ml",
       "description": "Sunscreen For Girls On The Go",
-      "offerPrice": 349,"amount": 1,
+      "offerPrice": 349,
+      "amount": 1,
       "actualPrice": ""
     },
     {
@@ -784,7 +807,8 @@
       "description": "Long-Wear Smudge-Proof Kajal Infused With Natural Superfood Extracts",
       "plus-icon src": "https://www.myglamm.com/images/plus-icon.png",
       "count": "2 Shades",
-      "offerPrice": 296,"amount": 1,
+      "offerPrice": 296,
+      "amount": 1,
       "actualPrice": 395
     },
     {
@@ -794,7 +818,8 @@
       "description": "Intense Longwear Liquid Eyeliner Pen | Made in Germany",
       "plus-icon src": "https://www.myglamm.com/images/plus-icon.png",
       "count": "2 Shades",
-      "offerPrice": 671,"amount": 1,
+      "offerPrice": 671,
+      "amount": 1,
       "actualPrice": 895
     },
     {
@@ -804,7 +829,8 @@
       "description": "Up To 24HR Smudge-Proof Coloured Eyeliner",
       "plus-icon src": "https://www.myglamm.com/images/plus-icon.png",
       "count": "4 Shades",
-      "offerPrice": 325,"amount": 1,
+      "offerPrice": 325,
+      "amount": 1,
       "actualPrice": ""
     },
     {
@@ -814,7 +840,8 @@
       "description": "Precision Eyeliner with Intense Colour Payoff",
       "plus-icon src": "https://www.myglamm.com/images/plus-icon.png",
       "count": "7 Shades",
-      "offerPrice": 445,"amount": 1,
+      "offerPrice": 445,
+      "amount": 1,
       "actualPrice": ""
     },
     {
@@ -824,7 +851,8 @@
       "description": "Long-wear Kohl Pencil",
       "plus-icon src": "https://www.myglamm.com/images/plus-icon.png",
       "count": "2 Shades",
-      "offerPrice": 562,"amount": 1,
+      "offerPrice": 562,
+      "amount": 1,
       "actualPrice": 750
     },
     {
@@ -834,7 +862,8 @@
       "description": "Shimmer Eyeliner Pencil",
       "plus-icon src": "https://www.myglamm.com/images/plus-icon.png",
       "count": "3 Shades",
-      "offerPrice": 595,"amount": 1,
+      "offerPrice": 595,
+      "amount": 1,
       "actualPrice": 850
     },
     {
@@ -844,7 +873,8 @@
       "description": "2 in 1 Waterproof Matte Eyeliner + HD Brow Powder",
       "plus-icon src": "https://www.myglamm.com/images/plus-icon.png",
       "count": "1 Shade",
-      "offerPrice": 766,"amount": 1,
+      "offerPrice": 766,
+      "amount": 1,
       "actualPrice": 1095
     },
     {
@@ -854,7 +884,8 @@
       "description": "Multitasking, Long-wearing Retractable Kajal Pencil | Made in Germany",
       "plus-icon src": "https://www.myglamm.com/images/plus-icon.png",
       "count": "2 Shades",
-      "offerPrice": 595,"amount": 1,
+      "offerPrice": 595,
+      "amount": 1,
       "actualPrice": 850
     },
     {
@@ -864,7 +895,8 @@
       "description": "Long-lasting, Nourishing Kajal & Eyeliner",
       "plus-icon src": "https://www.myglamm.com/images/plus-icon.png",
       "count": "1 Shade",
-      "offerPrice": 765,"amount": 1,
+      "offerPrice": 765,
+      "amount": 1,
       "actualPrice": 850
     },
     {
@@ -874,7 +906,8 @@
       "description": "Precision Eyeliner with Intense Colour Payoff",
       "plus-icon src": "",
       "count": "",
-      "offerPrice": 534,"amount": 1,
+      "offerPrice": 534,
+      "amount": 1,
       "actualPrice": 890
     },
     {
@@ -884,7 +917,8 @@
       "description": "Precision Eyeliner with Intense Colour Payoff",
       "plus-icon src": "",
       "count": "",
-      "offerPrice": 801,"amount": 1,
+      "offerPrice": 801,
+      "amount": 1,
       "actualPrice": 1335
     },
     {
@@ -894,7 +928,8 @@
       "description": "Glitter Wing Eyeliner Sticker",
       "plus-icon src": "https://www.myglamm.com/images/plus-icon.png",
       "count": "4 Shades",
-      "offerPrice": 265,"amount": 1,
+      "offerPrice": 265,
+      "amount": 1,
       "actualPrice": 295
     },
     {
@@ -904,7 +939,8 @@
       "description": "Long-Wear Smudge-Proof Kajal Infused With Natural Superfood Extracts",
       "plus-icon src": "",
       "count": "",
-      "offerPrice": 553,"amount": 1,
+      "offerPrice": 553,
+      "amount": 1,
       "actualPrice": 790
     },
     {
@@ -917,6 +953,43 @@
       "offerPrice": 671,
       "amount": 1,
       "actualPrice": 895
+    }
+  ],
+  "registeredUser": [
+    {
+      "id": 1,
+      "firstName": "Parul",
+      "lastName": "Saini",
+      "email": "p@gmail.com",
+      "password": "1234"
+    },
+    {
+      "firstName": "Shubhangi",
+      "lastName": "Saini",
+      "email": "eve.holt@reqres.in",
+      "password": "redhh",
+      "id": 2
+    },
+    {
+      "firstName": "a",
+      "lastName": "d",
+      "email": "shubh@gmail.com",
+      "password": "345",
+      "id": 3
+    },
+    {
+      "firstName": "Shubhangi ",
+      "lastName": "Saini",
+      "email": "ss@gmail.com",
+      "password": "123456",
+      "id": 4
+    },
+    {
+      "firstName": "Suhani",
+      "lastName": "Saini",
+      "email": "soni@gmail.com",
+      "password": "8888",
+      "id": 5
     }
   ]
 }
