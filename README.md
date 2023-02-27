@@ -55,4 +55,6 @@ This project  is built in the span of 5 day.
 
 ![checkout](/images/Checkout.png) 
 
+![Tictac tree](https://user-images.githubusercontent.com/115461618/images/Checkout.png)
+
 
