@@ -1,6 +1,6 @@
 # Grow Glamorous (GG.com)
 
- ![Logo](/Images/GGNew.png)
+ ![Logo](/images/GGNew.png)
 
 GG.com is the clone of Myglamm , a E-commerce site. This is a shopping website of cosmetic products belongs to women such as makeup product, lipstick, eyeliner, sunscreen ans many more. 
 This project  is built in the span of 5 day.
@@ -35,25 +35,26 @@ This project  is built in the span of 5 day.
 
 *  ## Landing Page
 
-![LandingPage1](/Images/LandingPage1.png)
-![LandingPage2](/Images/LandingPage2.png)
-![responsive](/Images/Rsposiveness.png)
+![LandingPage1](/images/LandingPage1.png)
+![LandingPage2](/images/LandingPage2.png)
+![responsive](/images/Rsposiveness.png)
 
 *  ## Sign up
 
-![signup](/Images/signup.png)
+![signup](/images/signup.png)
+
 
 * ## Product Page
 
- ![ProductPage](/Images/ProductPage.png) 
+ ![ProductPage](/images/ProductPage.png) 
  
  * ## Product Page
 
-  ![BagPage](/Images/Bag20Page.png) 
+  ![BagPage](/images/Bag20Page.png) 
 
   * ## Checkout Page
 
-  ![checkout](/Images/Checkout.png) 
+  ![checkout](/images/Checkout.png) 
 
 ### `npm run build`
 
