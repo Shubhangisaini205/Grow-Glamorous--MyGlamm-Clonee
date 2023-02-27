@@ -199,7 +199,7 @@ export default function BestSellerCarousel() {
                 {BestSeller.map((item, index) => (
                    
                        
-                             <Link to="/makeup"   key={item.id}>
+                             <Link key={item.id}>
                         <Box
           cursor={"pointer"}
           className="box"
