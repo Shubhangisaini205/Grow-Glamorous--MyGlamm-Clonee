@@ -14,7 +14,7 @@ import Eyeliner from '../Pages/Eyeliner'
 import LipstickSingle from '../Pages/LipstickSinglePage'
 import EyelinerSingle from "../Pages/EyelinerSinglePage"
 import SkinCareSingle from '../Pages/SkinCareSinglePage'
-
+import PrivateRoute from './PrivateRoute'
 const AllRoutes = () => {
     return (
         <div>
@@ -31,7 +31,8 @@ const AllRoutes = () => {
                 <Route path="/eyeliner" element={<Eyeliner/>}/>
                 <Route path="/eyeliner/:eyeliner_id" element={<EyelinerSingle/>}/>
                 <Route path="/bag" element={<Bag/>}/>
-                <Route path="/checkout" element={<CheckOut/>}/>
+                <Route path="/checkout" element={<PrivateRoute><CheckOut/></PrivateRoute>
+                }/>
                 <Route path= "*" element={<NotFound/>} />
                 
             </Routes>

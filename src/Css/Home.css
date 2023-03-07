@@ -10,9 +10,18 @@
 
 .spotlight{
     margin-top: 5%;
+   
+}
+ .spotlight img{
+    transition: 1s ease;
 }
 
-
+.spotlight img:hover{
+    -webkit-transform: scale(0.8);
+-ms-transform: scale(0.8);
+transform: scale(0.8);
+transition: 1s ease;
+}
 h1{
     display:inline;
     font-size:1.5rem;
@@ -37,6 +46,18 @@ h1{
 .latest-glam-launches{
     margin-top: 5%;
 }
+
+
+.latest-glam-launches img{
+    transition: 1s ease;
+    }
+    
+    .latest-glam-launches img:hover{
+    -webkit-transform: rotateZ(-10deg);
+    -ms-transform: rotateZ(-10deg);
+    transform: rotateZ(-10deg);
+    transition: 1s ease;
+    }
 
 /* shop from category */
 .shop-from-category>div{
