@@ -9,7 +9,7 @@ function HairCareSingle() {
     const val = useParams()
     const GetHairCare = async () => {
         try {
-            let res = await fetch(`http://localhost:8080/shampoo/${val.hairCare_id}`)
+            let res = await fetch(`https://myglammbackened.onrender.com/shampoo/${val.hairCare_id}`)
             let Data = await res.json();
             console.log(Data)
             setHairCare(Data);

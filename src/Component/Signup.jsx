@@ -40,7 +40,7 @@ import Signin from "./Signin";
      const AddUser =(value={firstName,lastName,email,password})=>{
       return axios({
         method:"post",
-        url:"http://localhost:8080/registeredUser",
+        url:"https://myglammbackened.onrender.com/registeredUser",
         data:value
       })
      }

@@ -57,8 +57,8 @@ function HairCare() {
     let apiUrl;
 
     (order) ?
-        apiUrl = `http://localhost:8080/shampoo?_sort=${sort}&_order=${order}` :
-        apiUrl = `http://localhost:8080/shampoo`
+        apiUrl = `https://myglammbackened.onrender.com/shampoo?_sort=${sort}&_order=${order}` :
+        apiUrl = `https://myglammbackened.onrender.com/shampoo`
 
 
         

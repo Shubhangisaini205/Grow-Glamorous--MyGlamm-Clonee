@@ -60,8 +60,8 @@ function Lipstick() {
     let apiUrl;
 
     (order) ?
-        apiUrl = `http://localhost:8080/lipstick?_sort=${sort}&_order=${order}` :
-        apiUrl = `http://localhost:8080/lipstick`
+        apiUrl = `https://myglammbackened.onrender.com/lipstick?_sort=${sort}&_order=${order}` :
+        apiUrl = `https://myglammbackened.onrender.com/lipstick`
 
 const GetLipstick=()=>{
     dispatch({type:"REQUEST"})

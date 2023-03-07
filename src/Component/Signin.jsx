@@ -34,7 +34,7 @@ function Signin() {
 
 
   const GetData = () => {
-    return axios.get("http://localhost:8080/registeredUser").then((res) => setUserData(res.data))
+    return axios.get("https://myglammbackened.onrender.com/registeredUser").then((res) => setUserData(res.data))
 
   }
   useEffect(() => {

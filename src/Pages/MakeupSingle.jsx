@@ -9,7 +9,7 @@ function MakeupSingle() {
     const val = useParams()
     const GetMakeup = async () => {
         try {
-            let res = await fetch(`http://localhost:8080/makeup/${val.makeup_id}`)
+            let res = await fetch(`https://myglammbackened.onrender.com/makeup/${val.makeup_id}`)
             let Data = await res.json();
             console.log(Data)
             setMakeup(Data);
