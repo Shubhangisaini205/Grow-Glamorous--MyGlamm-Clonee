@@ -34,7 +34,8 @@ function Signin() {
 
 
   const GetData = () => {
-    return axios.get("http://localhost:8080/registeredUser").then((res) => setUserData(res.data))
+
+    return axios.get("https://myglammbackened.onrender.com/registeredUser").then((res) => setUserData(res.data))
 
   }
   useEffect(() => {
@@ -56,7 +57,11 @@ function Signin() {
     if (flag == true) {
       // console.log("OK")
       toast({
+
+
+
         description: "Welcome to Grow Glamorous",
+
         status: "success",
         duration: 1500,
         isClosable: true,

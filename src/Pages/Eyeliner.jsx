@@ -59,8 +59,8 @@ function Eyeliner() {
     let apiUrl;
 
     (order) ?
-        apiUrl = `http://localhost:8080/eyeliner?_sort=${sort}&_order=${order}` :
-        apiUrl = `http://localhost:8080/eyeliner`
+        apiUrl = `https://myglammbackened.onrender.com/eyeliner?_sort=${sort}&_order=${order}` :
+        apiUrl = `https://myglammbackened.onrender.com/eyeliner`
 
 
         

@@ -9,7 +9,7 @@ function EyelinerSingle() {
     const val = useParams()
     const GetEyeliner = async () => {
         try {
-            let res = await fetch(`http://localhost:8080/eyeliner/${val.eyeliner_id}`)
+            let res = await fetch(`https://myglammbackened.onrender.com/eyeliner/${val.eyeliner_id}`)
             let Data = await res.json();
             console.log(Data)
             setEyeliner(Data);

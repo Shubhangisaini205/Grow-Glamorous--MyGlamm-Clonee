@@ -507,7 +507,8 @@ import { CartContext } from '../Context/CartContextProvider';
               textAlign={useBreakpointValue({ base: 'center', md: 'left' })}
               fontFamily={'heading'}
               color={useColorModeValue('gray.800', 'white')}>
-                
+
+
              <Image w={"40px"}h={"40px"} src="GGNew.png"></Image>
             </Text>
   

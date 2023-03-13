@@ -59,8 +59,8 @@ function Makeup() {
     let apiUrl;
 
     (order) ?
-        apiUrl = `http://localhost:8080/makeup?_sort=${sort}&_order=${order}` :
-        apiUrl = `http://localhost:8080/makeup`
+        apiUrl = `https://myglammbackened.onrender.com/makeup?_sort=${sort}&_order=${order}` :
+        apiUrl = `https://myglammbackened.onrender.com/makeup`
 
 
         

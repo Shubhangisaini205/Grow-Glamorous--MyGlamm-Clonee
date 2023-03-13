@@ -9,7 +9,7 @@ function LipstickSingle() {
     const val = useParams()
     const GetLipstick = async () => {
         try {
-            let res = await fetch(`http://localhost:8080/lipstick/${val.lipstick_id}`)
+            let res = await fetch(`https://myglammbackened.onrender.com/lipstick/${val.lipstick_id}`)
             let Data = await res.json();
             console.log(Data)
             setLipstick(Data);

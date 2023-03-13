@@ -9,7 +9,7 @@ function SkinCareSingle() {
     const val = useParams()
     const GetSkincare= async () => {
         try {
-            let res = await fetch(`http://localhost:8080/skincare/${val.skincare_id}`)
+            let res = await fetch(`https://myglammbackened.onrender.com/skincare/${val.skincare_id}`)
             let Data = await res.json();
             console.log(Data)
             setSkincare(Data);

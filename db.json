@@ -978,25 +978,12 @@
       "id": 3
     },
     {
-      "firstName": "Shubhangi ",
-      "lastName": "Saini",
-      "email": "shubhangi@gmail.com",
-      "password": "123456",
-      "id": 4
-    },
-    {
       "firstName": "Suhani",
       "lastName": "Saini",
       "email": "soni@gmail.com",
       "password": "8888",
       "id": 5
-    },
-    {
-      "firstName": "Yogesh",
-      "lastName": "Bhatt",
-      "email": "yogesh@gmail.com",
-      "password": "1234",
-      "id": 6
     }
+    
   ]
 }
