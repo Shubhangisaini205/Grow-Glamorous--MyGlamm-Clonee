@@ -21,7 +21,11 @@ import {
             LIt Liquid Matte Lipstick + LIT Velvet Matte Liquid Lipstick GET this @Re 1
             </Box>
 
+
             <Box  fontFamily='sans-serif'  color= '#ec4899' fontWeight='bold' fontSize='13px' pl='10px' >
+
+            <Box  fontFamily='sans-serif'  color= '#ec4899' fontSize='13px' pl='10px' >
+
                 SHOP NOW
             </Box>
             <Spacer/>

@@ -115,13 +115,13 @@ GetLipstick()
         className="sortByCostAsc"
         onClick={()=>setOrder("asc")}
         >
-          Price Low to High
+          Price Low to High ↑
         </Button>
         <Button colorScheme={"teal"} className="sortByCostDesc" m={2}
         isDisabled={order=="desc"}
         onClick = {()=>setOrder("desc")}
         >
-         Price High to Low
+         Price High to Low ↓
         </Button>
       </Box>
         
