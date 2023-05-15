@@ -6,6 +6,8 @@
 GG.com is the clone of Myglamm , a E-commerce site. This is a shopping website of cosmetic products belongs to women such as makeup product, lipstick, eyeliner, sunscreen ans many more. 
 This project  is built in the span of 5 day.
 
+## Deployed Link: melodic-axolotl-4b8a54.netlify.app/
+
 ***
 ## Tech Stacks I have used  is:-
 
